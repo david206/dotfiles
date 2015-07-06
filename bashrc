@@ -115,3 +115,6 @@ fi
 
 # added by Anaconda 2.2.0 installer
 export PATH="/home/david/anaconda/bin:$PATH"
+
+export NVM_DIR="/home/david/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
