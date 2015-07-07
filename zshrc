@@ -52,3 +52,4 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="/home/david/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export NVM_NODEJS_ORG_MIRROR=http://nodejs.org/dist
+export EDITOR=vim
