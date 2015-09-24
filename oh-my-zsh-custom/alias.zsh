@@ -18,3 +18,5 @@ alias et='vim ~/.tmux.conf'
 alias ez='vim ~/.zshrc'
 
 alias gbr='git for-each-ref --sort="-authordate:iso8601" --format=" %(color:green)%(authordate:iso8601)%09%(color:white)%(refname:short)" refs/heads'
+
+alias pull_request='google-chrome https://github.com/$(git remote -v | sed -n "s/origin.*git\@github.com\:\(.*\/.*\).git.*(push)/\1/p")/compare/$(git symbolic-ref HEAD | awk -F "/" "{print \$3}")\?expand=1'
