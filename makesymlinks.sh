@@ -32,6 +32,7 @@ done
 
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
+echo "Checking if zshell is installed."
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     # Clone my oh-my-zsh repository from GitHub only if it isn't already present
     if [[ ! -d $dir/oh-my-zsh/ ]]; then
@@ -43,6 +44,7 @@ if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     fi
 else
     # If zsh isn't installed, get the platform of the current machine
+    echo "Installing zshell"
     platform=$(uname);
     # If the platform is Linux, try an apt-get to install zsh and then recurse
     if [[ $platform == 'Linux' ]]; then
