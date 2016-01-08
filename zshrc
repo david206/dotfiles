@@ -13,7 +13,7 @@ ZSH_THEME="3den"
 # COMPLETION_WAITING_DOTS="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/dotfiles/oh-my-zsh-custom/
+ZSH_CUSTOM=~/.dotfiles/oh-my-zsh-custom/
 
 plugins=(git sublime)
 
