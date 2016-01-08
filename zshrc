@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/david/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="3den"
 
@@ -13,13 +13,13 @@ ZSH_THEME="3den"
 # COMPLETION_WAITING_DOTS="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=/home/david/dotfiles/oh-my-zsh-custom/
+ZSH_CUSTOM=~/dotfiles/oh-my-zsh-custom/
 
 plugins=(git sublime)
 
 # User configuration
 
-export PATH="/home/david/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="~/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
