@@ -32,9 +32,10 @@ done
 
 install_vundle () {
 echo "Cehcking if Vundle is installed."
-if [[ ! -d ~/vim/bundle/Vundle.vim ]; then
+if [[ ! -d ~/vim/bundle/Vundle.vim ]]; then
 	echo "Installing Vundle"
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 }
 
 install_zsh () {
