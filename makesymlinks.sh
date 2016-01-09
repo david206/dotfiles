@@ -32,7 +32,7 @@ done
 
 install_vundle () {
 echo "Cehcking if Vundle is installed."
-if [[ ! -d ~/vim/bundle/Vundle.vim ]]; then
+if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
 	echo "Installing Vundle"
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
@@ -72,5 +72,14 @@ else
 fi
 }
 
+install_tmux () {
+	if hash tmux 2>/dev/null; then
+		echo "tmux is installed already"	
+	else
+		echo "Installing tmux"
+		sudo apt-get install tmux
+	fi
+}
 install_zsh
+install_tmux
 install_vundle
