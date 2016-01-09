@@ -30,6 +30,13 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+install_vundle () {
+echo "Cehcking if Vundle is installed."
+if [[ ! -d ~/vim/bundle/Vundle.vim ]; then
+	echo "Installing Vundle"
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+}
+
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
 echo "Checking if zshell is installed."
@@ -65,3 +72,4 @@ fi
 }
 
 install_zsh
+install_vundle
