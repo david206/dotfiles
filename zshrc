@@ -53,3 +53,12 @@ export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export NVM_NODEJS_ORG_MIRROR=http://nodejs.org/dist
 export EDITOR=vim
+export KEYTIMEOUT=10
+
+# bindkey -v
+# bindkey '^R' history-incremental-pattern-search-backward
+# bindkey -M viins 'jk' vi-cmd-mode
+
+# echo 'Goals: Used and believed detection probabilities in the end of February' | cowsay  
+
+if [ "$TMUX" = "" ]; then tmux; fi
